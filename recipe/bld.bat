@@ -22,6 +22,9 @@ if errorlevel 1 exit /b 1
 cmake --build . 
 if errorlevel 1 exit /b 1
 
+dir mdal
+dir tools
+
 copy /B mdal\*.dll %LIBRARY_BIN%
 if errorlevel 1 exit /b 1
 
