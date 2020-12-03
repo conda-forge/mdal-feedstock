@@ -10,7 +10,7 @@ source:
   sha256: da69b46dac5f42db451556fec7604ea494d41b6e3c83a775bffee1966506c8c5
 
 build:
-  number: 2
+  number: 0
   run_exports:
     - {{ pin_subpackage('mdal', max_pin='x.x') }}
 
