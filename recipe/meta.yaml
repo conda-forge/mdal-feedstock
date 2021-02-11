@@ -1,13 +1,13 @@
 {% set name = "mdal" %}
-{% set version = "0.7.4" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/lutraconsulting/MDAL/archive/0.7.4.tar.gz
-  sha256: 185764b3f33cdfd46dcd42a03e8381d3019e6dfe351004c3e51589fd29e2b574
+  url: https://github.com/lutraconsulting/MDAL/archive/0.8.0.zip
+  sha256: d0ec19f96f504907153f198229cbc776ba2f3680d5ef87fcdbc4a77c40bdc490
 
 build:
   number: 1
