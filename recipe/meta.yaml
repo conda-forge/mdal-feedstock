@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/lutraconsulting/MDAL/archive/0.8.0.zip
-  sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  sha256: d0ec19f96f504907153f198229cbc776ba2f3680d5ef87fcdbc4a77c40bdc490
 
 build:
   number: 0
