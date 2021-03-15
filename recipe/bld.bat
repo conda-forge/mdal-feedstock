@@ -20,14 +20,14 @@ cmake  ^
 	..
 if errorlevel 1 exit /b 1
 
-cmake --build . 
+cmake --build . --config Release
 if errorlevel 1 exit /b 1
 
 dir mdal
 dir tools
 
-copy /B mdal\Debug\*.dll %LIBRARY_BIN%
+copy /B mdal\Release\*.dll %LIBRARY_BIN%
 if errorlevel 1 exit /b 1
 
-copy /B tools\Debug\*.exe %LIBRARY_BIN%
+copy /B tools\Release\*.exe %LIBRARY_BIN%
 if errorlevel 1 exit /b 1
