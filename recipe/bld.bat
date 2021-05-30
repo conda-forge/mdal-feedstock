@@ -29,6 +29,9 @@ set PATH=%PATH%;%LIBRARY_BIN%
 copy /B mdal\Release\*.dll %LIBRARY_BIN%
 if errorlevel 1 exit /b 1
 
+copy /B mdal\Release\*.lib %LIBRARY_LIB%
+if errorlevel 1 exit /b 1
+
 copy /B tools\Release\*.exe %LIBRARY_BIN%
 if errorlevel 1 exit /b 1
 
