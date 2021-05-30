@@ -2,8 +2,6 @@
 
 set -ex
 
-export CXXFLAGS="${CXXFLAGS} -std=c++11"
-
 mkdir build
 cd build
 
