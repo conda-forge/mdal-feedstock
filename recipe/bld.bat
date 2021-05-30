@@ -25,13 +25,14 @@ cmake --build . --config Release
 if errorlevel 1 exit /b 1
 
 set PATH=%PATH%;%LIBRARY_BIN%
-ctest -VV -C Release --exclude-regex mdal_dynamic*
-if errorlevel 1 exit /b 1
 
 copy /B mdal\Release\*.dll %LIBRARY_BIN%
 if errorlevel 1 exit /b 1
 
 copy /B tools\Release\*.exe %LIBRARY_BIN%
+if errorlevel 1 exit /b 1
+
+ctest -VV -C Release --exclude-regex mdal_dynamic*
 if errorlevel 1 exit /b 1
 
 cd ..
