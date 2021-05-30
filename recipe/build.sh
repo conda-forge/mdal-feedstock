@@ -7,9 +7,10 @@ cd build
 
 export TEST=ON
 
+export CXXFLAGS="${CXXFLAGS} -std=c++11 -ldl"
+
 if [ "$(uname)" == "Linux" ]; then
    export LDFLAGS="${LDFLAGS} -Wl,-rpath-link,${PREFIX}/lib"
-   export TEST=OFF
 fi
 
 cmake -G "Unix Makefiles" \
@@ -23,6 +24,6 @@ cmake -G "Unix Makefiles" \
 make -j $CPU_COUNT
 make install
 export PATH=$PATH:$PREFIX/lib
-if ["$TEST" == "ON"]; then
-  ctest -VV
-fi
+
+ctest -VV
+
