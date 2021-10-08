@@ -1,13 +1,13 @@
 c_compiler:
 - vs2017
 channel_sources:
-- conda-forge,defaults
+- conda-forge
 channel_targets:
 - conda-forge main
 cxx_compiler:
 - vs2017
 hdf5:
-- 1.10.6
+- 1.12.1
 libgdal:
 - '3.3'
 libnetcdf:
