@@ -35,6 +35,8 @@ if errorlevel 1 exit /b 1
 copy /B tools\Release\*.exe %LIBRARY_BIN%
 if errorlevel 1 exit /b 1
 
+ctest --version
+
 ctest -VV -C Release --exclude-regex mdal_dynamic*
 if errorlevel 1 exit /b 1
 
