@@ -17,7 +17,7 @@ cmake  ^
 	-DCMAKE_INSTALL_PREFIX:PATH="%LIBRARY_PREFIX%" ^
     -DCMAKE_PREFIX_PATH:PATH="%LIBRARY_PREFIX%" ^
 	-DCMAKE_INCLUDE_PATH="%INCLUDE_INC%" ^
-	-D EXTERNAL_DRIVER_DHI_DFSU=OFF ^
+	-D EXTERNAL_DRIVER_DHI_DFS=OFF ^
 	..
 if errorlevel 1 exit /b 1
 
@@ -35,7 +35,9 @@ if errorlevel 1 exit /b 1
 copy /B tools\Release\*.exe %LIBRARY_BIN%
 if errorlevel 1 exit /b 1
 
-ctest -VV -C Release --exclude-regex mdal_dynamic*
+ctest --version
+
+ctest -VV -C Release --exclude-regex "mdal_dynamic*|mdal_api*"
 if errorlevel 1 exit /b 1
 
 cd ..
