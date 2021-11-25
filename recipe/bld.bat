@@ -37,7 +37,7 @@ if errorlevel 1 exit /b 1
 
 ctest --version
 
-ctest -VV -C Release --exclude-regex mdal_dynamic*
+ctest -VV -C Release --exclude-regex "mdal_dynamic*|mdal_api*"
 if errorlevel 1 exit /b 1
 
 cd ..
