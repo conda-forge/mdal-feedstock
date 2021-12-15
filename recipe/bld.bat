@@ -5,6 +5,7 @@ cd build
 if errorlevel 1 exit /b 1
 
 cmake  ^
+	-G "Visual Studio 16 2019" ^
 	-DCMAKE_BUILD_TYPE=Release  ^
 	-DENABLE_TESTS=on ^
 	-DNETCDF_PREFIX="%LIBRARY_PREFIX%" ^
