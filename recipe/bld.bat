@@ -37,6 +37,8 @@ if errorlevel 1 exit /b 1
 
 ctest --version
 
+set GRIB_ADJUST_LONGITUDE_RANGE=NO
+
 ctest -VV -C Release --exclude-regex "mdal_dynamic*|mdal_api*"
 if errorlevel 1 exit /b 1
 
