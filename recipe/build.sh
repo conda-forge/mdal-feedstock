@@ -25,5 +25,6 @@ make -j $CPU_COUNT
 make install
 export PATH=$PATH:$PREFIX/lib
 
+export GRIB_ADJUST_LONGITUDE_RANGE=NO
 ctest -VV
 
