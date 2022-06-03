@@ -9,7 +9,7 @@ cxx_compiler:
 hdf5:
 - 1.12.1
 libgdal:
-- '3.4'
+- '3.5'
 libnetcdf:
 - 4.8.1
 libxml2:
