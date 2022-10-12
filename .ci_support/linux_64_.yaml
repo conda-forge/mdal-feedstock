@@ -22,11 +22,6 @@ libnetcdf:
 - 4.8.1
 libxml2:
 - '2.9'
-pin_run_as_build:
-  libgdal:
-    max_pin: x.x
-  libxml2:
-    max_pin: x.x
 target_platform:
 - linux-64
 zip_keys:
