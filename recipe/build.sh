@@ -19,7 +19,6 @@ cmake -G "Unix Makefiles" \
   -DCMAKE_LIBRARY_PATH=$PREFIX/lib \
   -DCMAKE_INCLUDE_PATH=$PREFIX/include \
   -DENABLE_TESTS=$TEST \
-  -DCMAKE_CXX_FLAGS=-Wno-unused-command-line-argument \
   ..
 
 make -j $CPU_COUNT
