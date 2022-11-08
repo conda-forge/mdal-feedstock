@@ -40,7 +40,7 @@ ctest --version
 
 set GRIB_ADJUST_LONGITUDE_RANGE=NO
 
-dir tests/data/ugrid/special@char
+dir tests\data\ugrid\special@char
 
 ctest -VV -C Release --exclude-regex "mdal_dynamic*"
 if errorlevel 1 exit /b 1
