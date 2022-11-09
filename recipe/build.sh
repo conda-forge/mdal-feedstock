@@ -8,7 +8,6 @@ cd build
 export TEST=ON
 
 if [ "$(uname)" == "Linux" ]; then
-   export LDFLAGS="${LDFLAGS} -rpath-link,${PREFIX}/lib"
    export CXXFLAGS="${CXXFLAGS} -ldl"
 fi
 
