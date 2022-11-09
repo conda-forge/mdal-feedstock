@@ -7,8 +7,6 @@ cd build
 
 export TEST=ON
 
-export CXXFLAGS="${CXXFLAGS} -std=c++11 -ldl"
-
 if [ "$(uname)" == "Linux" ]; then
    export LDFLAGS="${LDFLAGS} -Wl,-rpath-link,${PREFIX}/lib"
 fi
