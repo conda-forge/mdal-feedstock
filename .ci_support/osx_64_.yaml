@@ -19,7 +19,7 @@ libgdal:
 libnetcdf:
 - 4.8.1
 libxml2:
-- '2.9'
+- '2.10'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 target_platform:

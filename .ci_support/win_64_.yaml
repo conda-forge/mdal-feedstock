@@ -13,6 +13,6 @@ libgdal:
 libnetcdf:
 - 4.8.1
 libxml2:
-- '2.9'
+- '2.10'
 target_platform:
 - win-64
