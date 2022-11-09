@@ -7,10 +7,8 @@ cd build
 
 export TEST=ON
 
-export CXXFLAGS="${CXXFLAGS} -std=c++11 -ldl"
-
 if [ "$(uname)" == "Linux" ]; then
-   export LDFLAGS="${LDFLAGS} -Wl,-rpath-link,${PREFIX}/lib"
+   export CXXFLAGS="${CXXFLAGS} -ldl"
 fi
 
 cmake -G "Unix Makefiles" \

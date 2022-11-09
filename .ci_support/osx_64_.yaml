@@ -3,7 +3,7 @@ MACOSX_DEPLOYMENT_TARGET:
 c_compiler:
 - clang
 c_compiler_version:
-- '13'
+- '14'
 channel_sources:
 - conda-forge
 channel_targets:
@@ -11,7 +11,7 @@ channel_targets:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '13'
+- '14'
 hdf5:
 - 1.12.2
 libgdal:
@@ -19,14 +19,9 @@ libgdal:
 libnetcdf:
 - 4.8.1
 libxml2:
-- '2.9'
+- '2.10'
 macos_machine:
 - x86_64-apple-darwin13.4.0
-pin_run_as_build:
-  libgdal:
-    max_pin: x.x
-  libxml2:
-    max_pin: x.x
 target_platform:
 - osx-64
 zip_keys:

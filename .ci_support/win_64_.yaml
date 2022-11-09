@@ -1,11 +1,11 @@
 c_compiler:
-- vs2017
+- vs2019
 channel_sources:
 - conda-forge
 channel_targets:
 - conda-forge main
 cxx_compiler:
-- vs2017
+- vs2019
 hdf5:
 - 1.12.2
 libgdal:
@@ -13,11 +13,6 @@ libgdal:
 libnetcdf:
 - 4.8.1
 libxml2:
-- '2.9'
-pin_run_as_build:
-  libgdal:
-    max_pin: x.x
-  libxml2:
-    max_pin: x.x
+- '2.10'
 target_platform:
 - win-64
