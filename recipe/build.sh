@@ -8,7 +8,8 @@ cd build
 export TEST=ON
 
 if [ "$(uname)" == "Linux" ]; then
-   export LDFLAGS="${LDFLAGS} -Wl,-rpath-link,${PREFIX}/lib"
+   export LDFLAGS="${LDFLAGS} -rpath-link,${PREFIX}/lib"
+   export CXXFLAGS="${CXXFLAGS} -ldl"
 fi
 
 cmake -G "Unix Makefiles" \
