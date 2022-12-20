@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/lutraconsulting/MDAL/archive/refs/tags/release-{{ version }}.tar.gz
-  sha256: 17e8b316f75e72968bb627d1ae00432da576ff0e03cc4008862b32042c27e50c
-
+  sha256: 120d40f610339f7c4aae36fc8ff392922f996cf6999b8c2b8fcc03f657644077
+  
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage('mdal', max_pin='x.x') }}
 
