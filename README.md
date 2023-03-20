@@ -1,11 +1,11 @@
-About mdal
-==========
+About mdal-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mdal-feedstock/blob/main/LICENSE.txt)
 
 Home: https://www.mdal.xyz/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mdal-feedstock/blob/main/LICENSE.txt)
 
 Summary: Mesh Data Abstraction Layer
 
