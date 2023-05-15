@@ -5,11 +5,11 @@ channel_sources:
 channel_targets:
 - conda-forge main
 cxx_compiler:
-- vs2019
+- vs2022
 hdf5:
 - 1.14.0
 libgdal:
-- '3.6'
+- '3.7'
 libnetcdf:
 - 4.9.2
 libxml2:
