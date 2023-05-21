@@ -15,11 +15,11 @@ cxx_compiler_version:
 hdf5:
 - 1.14.0
 libgdal:
-- '3.7'
+- '3.6'
 libnetcdf:
 - 4.9.2
 libxml2:
-- '2.10'
+- '2.11'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 target_platform:
