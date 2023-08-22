@@ -13,7 +13,7 @@ cxx_compiler:
 cxx_compiler_version:
 - '15'
 hdf5:
-- 1.14.1
+- 1.14.2
 libgdal:
 - '3.7'
 libnetcdf:
