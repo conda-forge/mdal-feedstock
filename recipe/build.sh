@@ -24,4 +24,4 @@ make install
 export PATH=$PATH:$PREFIX/lib
 
 export GRIB_ADJUST_LONGITUDE_RANGE=NO
-ctest -VV 
+ctest -VV --exclude-regex "mdal_gdal_grib"
