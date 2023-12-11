@@ -7,12 +7,12 @@ channel_targets:
 cxx_compiler:
 - vs2019
 hdf5:
-- 1.14.2
+- 1.14.3
 libgdal:
 - '3.8'
 libnetcdf:
 - 4.9.2
 libxml2:
-- '2.11'
+- '2.12'
 target_platform:
 - win-64
