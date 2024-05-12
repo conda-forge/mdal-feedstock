@@ -11,7 +11,7 @@ source:
 
 build:
 
-  number: 1
+  number: 2
 
   run_exports:
     - {{ pin_subpackage('mdal', max_pin='x.x') }}
@@ -20,6 +20,7 @@ requirements:
   build:
     - {{ compiler('cxx') }}
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - cmake
     - make  # [unix]
   host:
