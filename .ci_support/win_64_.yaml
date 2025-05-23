@@ -11,10 +11,10 @@ cxx_compiler:
 hdf5:
 - 1.14.3
 libgdal:
-- '3.10'
+- '3.11'
 libnetcdf:
 - 4.9.2
 libxml2:
-- '2'
+- '2.13'
 target_platform:
 - win-64
