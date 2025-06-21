@@ -21,7 +21,7 @@ requirements:
     - {{ compiler('cxx') }}
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
-    - cmake == 3.9
+    - cmake ==3.9
     - make  # [unix]
   host:
     - libgdal
