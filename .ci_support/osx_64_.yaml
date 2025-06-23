@@ -18,12 +18,8 @@ cxx_compiler:
 - clangxx
 cxx_compiler_version:
 - '18'
-hdf5:
-- 1.14.6
 libgdal:
 - '3.11'
-libnetcdf:
-- 4.9.2
 libxml2:
 - '2.13'
 macos_machine:

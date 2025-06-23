@@ -11,7 +11,7 @@ source:
 
 build:
 
-  number: 2
+  number: 3
 
   run_exports:
     - {{ pin_subpackage('mdal', max_pin='x.x') }}
@@ -25,8 +25,6 @@ requirements:
     - make  # [unix]
   host:
     - libgdal
-    - hdf5
-    - libnetcdf
     - libxml2
   run:
 
