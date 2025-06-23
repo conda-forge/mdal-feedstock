@@ -10,8 +10,6 @@ cxx_compiler:
 - vs2022
 libgdal:
 - '3.11'
-libnetcdf:
-- 4.9.2
 libxml2:
 - '2.13'
 target_platform:
