@@ -20,8 +20,6 @@ docker_image:
 - quay.io/condaforge/linux-anvil-x86_64:alma9
 libgdal:
 - '3.11'
-libnetcdf:
-- 4.9.2
 libxml2:
 - '2.13'
 target_platform:
