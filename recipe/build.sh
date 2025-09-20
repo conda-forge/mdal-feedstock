@@ -23,5 +23,9 @@ make -j $CPU_COUNT
 make install
 export PATH=$PATH:$PREFIX/lib
 
-export GRIB_ADJUST_LONGITUDE_RANGE=NO
-ctest -VV --exclude-regex "mdal_gdal_grib"
+# Skip ``ctest`` when cross-compiling
+if [[ "${CONDA_BUILD_CROSS_COMPILATION:-}" != "1" || "${CROSSCOMPILING_EMULATOR:-}" != "" ]]; then
+  export GRIB_ADJUST_LONGITUDE_RANGE=NO
+  ctest -VV --exclude-regex "mdal_gdal_grib"
+fi
+
