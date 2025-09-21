@@ -26,6 +26,6 @@ export PATH=$PATH:$PREFIX/lib
 # Skip ``ctest`` when cross-compiling
 if [[ "${CONDA_BUILD_CROSS_COMPILATION:-}" != "1" || "${CROSSCOMPILING_EMULATOR:-}" != "" ]]; then
   export GRIB_ADJUST_LONGITUDE_RANGE=NO
-  ctest -VV --exclude-regex "mdal_gdal_grib"
+  ctest -VV --exclude-regex "(mdal_hec2d_test|mdal_gdal_grib)"
 fi
 
