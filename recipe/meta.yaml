@@ -26,6 +26,7 @@ requirements:
   host:
     - libgdal
     - libxml2-devel
+    - hdf5
   run:
 
 test:
