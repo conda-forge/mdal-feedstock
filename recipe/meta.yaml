@@ -11,7 +11,7 @@ source:
   
 build:
 
-  number: 0
+  number: 1
 
   run_exports:
     - {{ pin_subpackage('mdal', max_pin='x.x') }}
@@ -26,6 +26,7 @@ requirements:
   host:
     - libgdal
     - libxml2-devel
+    - hdf5
   run:
 
 test:
